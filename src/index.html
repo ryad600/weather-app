@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <form>
+      <label>
+        City:
+        <input type="text" name="city" />
+      </label>
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="error" style="display: none">
+      <p>Error getting weather data for the entered city.</p>
+    </div>
+    <h2>Current Weather</h2>
+    <p>Temperature: <span class="temp"></span>°C</p>
+    <p>Minimum Temperature: <span class="temp_min"></span>°C</p>
+    <p>Maximum Temperature: <span class="temp_max"></span>°C</p>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
